@@ -1,0 +1,254 @@
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #1a1a1a; /* Fundo escuro */
+  color: black; /* Texto claro */
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f41e1e;
+  margin-top: 4rem; /* Margem superior para compensar a altura da nav */
+}
+
+.titulo {
+  color: #f41e1e;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+nav {
+  background-color: red; /* Fundo vermelho */
+  padding: 1rem; /* Espaçamento interno */
+  position: fixed; /* Fixa a barra de navegação no topo */
+  top: 0; /* Alinha ao topo da página */
+  width: 100%; /* Largura total */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.menu {
+  list-style-type: none; /* Remove as bolinhas da lista */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu li {
+  margin-right: 2rem; /* Espaço entre os itens do menu */
+}
+
+.menu a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.menu a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+.texto {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards 0.5s;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Botão */
+.botao {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1.5rem 3rem; /* Aumentando o padding */
+  font-size: 1.2rem; /* Aumentando o tamanho da fonte */
+  background-color: #fff;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 2px solid black; /* Borda preta */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  background-color: #ff6666; /* Cor ao passar o mouse */
+}
+
+
+/* Seções */
+.scroll-section {
+  padding: 50px 5%; /* Ajustando o padding */
+  height: auto; /* Permitindo que as seções se ajustem ao conteúdo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f5f5f5; 
+  transition: background-color 0.3s;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
+  max-width: 800px; /* Limite de largura */
+  text-align: center; /* Texto centralizado */
+}
+
+h2 {
+  font-size: 2rem; /* Tamanho reduzido */
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 1rem; /* Ajustando a margem */
+  text-align: left; /* Texto à esquerda */
+}
+
+ul li {
+  margin-bottom: 0.5rem; /* Reduzindo o espaçamento */
+  font-size: 1rem; /* Tamanho reduzido */
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Seção de Exemplos */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as imagens */
+  margin-top: 30px; /* Espaçamento acima da galeria */
+}
+
+.image-item {
+  background: #2c2c2c; /* Fundo das caixas das imagens */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 10px;
+  text-align: center; /* Centralizar o texto abaixo das imagens */
+  width: 300px; /* Largura fixa para as imagens */
+}
+
+.image-item img {
+  width: 100%; /* Largura total do contêiner */
+  border-radius: 5px; /* Cantos arredondados nas imagens */
+}
+
+.image-item p {
+  margin-top: 10px; /* Espaçamento acima da descrição */
+  color: #d1d1d1; /* Texto em cor clara */
+}
+
+
+.sub_titulo {
+  font-size: 2rem; /* Tamanho do texto do subtítulo */
+  margin-top: 10px; /* Margem acima do subtítulo */
+  color: #333; /* Cor do subtítulo */
+}
+
+.active-section {
+  background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo suave */
+  transition: background-color 0.5s ease; /* Animação suave */
+}
+
+
+@media (max-width:768px){
+
+  #menu-btn{
+      display: inline-block;
+  }
+
+  .header .navbar{
+      position: absolute;
+      top:100%; right: -100%;
+      background: #fff;
+      width: 30rem;
+      height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active{
+      right:0;
+  }
+
+  .header .navbar a{
+      color:var(--black);
+      display: block;
+      margin:1.5rem;
+      padding:.5rem;
+      font-size: 2rem;
+      
+  }
+
+  .header .search-form{
+      width: 90%;
+      right: 2rem;
+  }
+
+  .home{
+      background-position: left;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .home .content h3{
+      font-size: 4.5rem;
+  }
+
+  .home .content p{
+      font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+      font-size: 40%;
+  }
+
+}

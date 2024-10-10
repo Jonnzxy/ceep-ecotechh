@@ -1,0 +1,709 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #f41e1e;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+
+}
+
+.logo {
+  width: 60px;
+  /* Ajuste a largura */
+  height: 60px;
+  /* Ajuste a altura */
+  background-image: url(/ceep/imgs/dceep.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 15;
+  top: 5px;
+  right: 80px;
+  position: absolute;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  top: 0;
+  /* Alinhado ao topo */
+  right: 0;
+  /* Alinhado à direita */
+}
+
+.navbar li {
+  margin-left: 7px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.banner {
+  height: 100vh;
+  background: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto .titulo {
+  color: #f41e1e;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.texto .sub_titulo {
+  color: #000;
+  font-size: 58px;
+  font-weight: 600;
+}
+
+.texto .botoes {
+  margin-top: 30px;
+}
+
+.texto .botoes button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: 0;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.texto .botoes button.n-overlay {
+  color: #f41e1e;
+  background: none;
+  border: 2px solid white;
+}
+
+.texto .botoes button.n-overlay:hover {
+  color: black;
+  background-color: #f5f5f5;
+}
+
+.texto .botoes button.overlay {
+  background: white;
+  color: black;
+  animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+@keyframes vibrar {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer {
+  border: 1px solid #f41e1e;
+  border-radius: 5px;
+  backdrop-filter: blur(3px);
+  text-align: center;
+  padding: 20px 0;
+  position: sticky;
+  width: 100%;
+  bottom: -40px;
+  /* Footer inicialmente escondido */
+  transition: bottom 1.0s;
+  /* Efeito de transição */
+
+}
+
+footer:hover {
+  bottom: 0;
+  /* Footer aparece quando passa o mouse em cima */
+}
+
+#brasao {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+  width: 60px;
+  /* Ajuste a largura */
+  height: 60px;
+  /* Ajuste a altura */
+  background-image: url(/ceep/imgs/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+
+/* Reset básico */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  transition: opacity 0.5s ease-in-out;
+  /* Transição suave para a opacidade */
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  /* Cor de fundo suave */
+  color: #333;
+}
+
+
+.discover {
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  /* Mover a posição para o contexto do banner */
+  top: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.discover img {
+  max-width: 60%;
+  height: 400;
+  animation: blob 20s linear infinite;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* Ajuste a cor conforme necessário */
+  text-align: center;
+  z-index: 1;
+  /* Garante que o texto fique acima da imagem */
+}
+
+@keyframes blob {
+  0% {
+    border-radius: 31% 69% 60% 40% / 37% 35% 65% 63%;
+  }
+
+  20% {
+    border-radius: 52% 48% 46% 54% / 55% 42% 58% 45%;
+  }
+
+  40% {
+    border-radius: 70% 30% 61% 39% / 34% 56% 44% 66%;
+  }
+
+  60% {
+    border-radius: 41% 59% 33% 67% / 58% 42% 58% 42%;
+  }
+
+  80% {
+    border-radius: 61% 39% 54% 46% / 39% 52% 48% 61%;
+  }
+
+  95% {
+    border-radius: 46% 54% 57% 43% / 65% 41% 59% 35%;
+  }
+
+  100% {
+    border-radius: 31% 69% 60% 40% / 37% 35% 65% 63%;
+  }
+}
+
+
+
+
+
+/* Seções principais */
+.scroll-section {
+  padding: 0px 0px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.scroll-section:nth-child(even) {
+  background: #f9f9f9;
+  /* Alternância de fundo */
+}
+
+.scroll-section .content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.scroll-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #8b2e2e;
+}
+
+.scroll-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.scroll-section ul {
+  list-style-type: square;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.scroll-section ul li {
+  margin-bottom: 10px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+
+  .scroll-section h2 {
+    font-size: 24px;
+  }
+
+  .scroll-section p,
+  .scroll-section ul {
+    font-size: 14px;
+  }
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Espaçamento entre as imagens */
+  margin-top: 30px;
+  /* Espaçamento acima da galeria */
+}
+
+#cursos {
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+#final {
+  grid-column: 1 / -1;
+  /* Faz o card ocupar a linha inteira */
+  justify-self: center;
+  /* Centraliza o card */
+}
+
+/* Para manter o card de segurança no trabalho em sua própria linha */
+.card {
+  margin: 20px;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  /* Ajuste conforme necessário */
+  max-height: 150px;
+  /* Limite máximo para a altura */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: auto;
+  /* Permite rolagem se o conteúdo exceder a altura */
+}
+
+.card:hover {
+  width: 700px;
+  /* Largura total do card ao passar o mouse */
+}
+
+.card:hover .card-content {
+  opacity: 1;
+  visibility: visible;
+  /* Torna visível ao passar o mouse */
+}
+
+
+
+#localiza h1 {
+  background-color: #f5f5f5;
+  font-size: 30px;
+  color: #8b2e2e;
+  display: flex;
+  justify-content: center;
+}
+
+#maps {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 2em;
+}
+
+.padd {
+  background-color: #2f2b41;
+  padding: 5px;
+  opacity: 80%;
+  box-shadow: 2px 2px 5px 5px #2f2b41;
+  border: solid 1px #2f2b41;
+  border-radius: 3px;
+}
+
+
+.rodape {
+  background-color: #f5f5f5;
+  margin-top: 40px;
+  padding: 2vh;
+  text-align: center;
+}
+
+.rodape img,
+span img {
+  height: 45px;
+  margin: 10px;
+}
+
+.img_curso span img {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+}
+
+.rodape iframe {
+  justify-content: right;
+  width: 35%;
+  height: 280px;
+  margin: 10px;
+}
+
+
+.rodape img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.rodape img:hover {
+  filter: grayscale(0%);
+}
+
+@media (min-width: 500px) and (max-width: 878px) {
+  #cursos {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  #final {
+    grid-column: 1 / -1;
+    /* Faz o card ocupar a linha inteira */
+    justify-self: center;
+    /* Centraliza o card */
+  }
+
+  .card {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card-content {
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    /* Ajuste conforme necessário */
+    max-height: 100px;
+    /* Limite máximo para a altura */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: auto;
+    /* Permite rolagem se o conteúdo exceder a altura */
+  }
+
+  .card:hover {
+    width: 400px;
+    /* Largura total do card ao passar o mouse */
+  }
+
+  .card:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    /* Torna visível ao passar o mouse */
+  }
+
+  footer {
+    border: 1px solid #f41e1e;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    /* Footer inicialmente escondido */
+    transition: bottom 1.0s;
+    /* Efeito de transição */
+    min-height: auto;
+  }
+
+
+
+  #brasao {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    width: 30px;
+    /* Ajuste a largura */
+    height: 30px;
+    /* Ajuste a altura */
+    background-image: url(/ceep/imgs/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 15;
+  }
+
+}
+/* Estilos para o botão hamburger */
+.menu-toggle {
+  display: none; /* Escondido por padrão */
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 499px) {
+  #cursos {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  #final {
+    grid-column: 1 / -1;
+    /* Faz o card ocupar a linha inteira */
+    justify-self: center;
+    /* Centraliza o card */
+  }
+
+  .card {
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card-content {
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    /* Ajuste conforme necessário */
+    max-height: 100px;
+    /* Limite máximo para a altura */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: auto;
+    /* Permite rolagem se o conteúdo exceder a altura */
+  }
+
+  .card:hover {
+    width: 400px;
+    /* Largura total do card ao passar o mouse */
+  }
+
+  .card:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    /* Torna visível ao passar o mouse */
+  }
+
+
+  #maps {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 2em;
+    width: 200px;
+    height: 140px;
+  }
+
+  #menu-btn{
+    display: inline-block;
+}
+
+
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f41e1e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+
+  .navbar ul.active {
+    display: flex; /* Mostrar o menu quando estiver ativo */
+  }
+
+  .navbar li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar o botão hamburger */
+    position: relative;
+    z-index: 20;
+  }
+  .logo {
+    width: 0px;
+    height: 0px;
+  }
+}

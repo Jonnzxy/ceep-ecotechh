@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTech - O Futuro Sustentável</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome para ícones -->
+  <style>
+    /* Adicione este CSS para animações */
+    .scroll-section {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(20px); /* Desloca um pouco para baixo */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave */
+    }
+
+    .scroll-section.active {
+        opacity: 1; /* Torna visível */
+        transform: translateY(0); /* Retorna à posição original */
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <header id="header">
+    <nav>
+      <ul class="menu">
+          <li><a href="ceep.html">Home</a></li>
+          <li><a href="Lixo.html">Lixo Eletronic</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#principles">Princípios</a></li>
+          <li><a href="#applications">Aplicações</a></li>
+          <li><a href="#benefits">Benefícios</a></li>
+          <li><a href="#future">Futuro</a></li>
+          <li><a href="#examples">Exemplos</a></li>
+        </ul>
+    </nav>
+    <div class="texto"> 
+      <h1 class="titulo">EcoTech</h1>
+      <h2 class="sub_titulo">A Tecnologia <span id="dynamic-text"></span></h2> <!-- Animação de texto -->
+      <div class="botoes">    
+        <button class="botao" onclick="scrollToSection('#about')">Descubra Mais</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="scroll-section">
+      <div class="content">
+        <h2>O Que é EcoTech?</h2>
+        <p>EcoTech é a interseção entre tecnologia e sustentabilidade, oferecendo soluções inovadoras para mitigar impactos ambientais e promover a conservação de recursos.</p>
+        <p>Através de inovações tecnológicas, buscamos integrar práticas sustentáveis no dia a dia, facilitando a transição para uma sociedade mais consciente e responsável.</p>
+      </div>
+    </section>
+
+    <section id="principles" class="scroll-section">
+      <div class="content">
+        <h2>Princípios Fundamentais</h2>
+        <ul>
+          <li><i class="fas fa-leaf"></i> <strong>Sustentabilidade:</strong> Tecnologias que preservam recursos naturais.</li>
+          <li><i class="fas fa-lightbulb"></i> <strong>Inovação:</strong> Novas soluções para desafios ambientais.</li>
+          <li><i class="fas fa-users"></i> <strong>Responsabilidade:</strong> Benefícios para a sociedade e meio ambiente.</li>
+          <li><i class="fas fa-book"></i> <strong>Educação:</strong> Promover a conscientização sobre tecnologia sustentável.</li>
+          <li><i class="fas fa-handshake"></i> <strong>Colaboração:</strong> Trabalhar em parceria para implementar soluções.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="applications" class="scroll-section">
+      <div class="content">
+        <h2>Aplicações da EcoTech</h2>
+        <ul>
+          <li><i class="fas fa-solar-panel"></i> <strong>Energia Renovável:</strong> Sistemas solares e eólicos.</li>
+          <li><i class="fas fa-city"></i> <strong>Cidades Inteligentes:</strong> Tecnologias IoT para monitoramento urbano.</li>
+          <li><i class="fas fa-tractor"></i> <strong>Agricultura Sustentável:</strong> Drones e IoT para monitoramento de safras.</li>
+          <li><i class="fas fa-recycle"></i> <strong>Reciclagem e Reutilização:</strong> Tecnologias que facilitam a separação de materiais recicláveis.</li>
+          <li><i class="fas fa-bus-alt"></i> <strong>Transporte Verde:</strong> Desenvolvimento de veículos elétricos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="benefits" class="scroll-section">
+      <div class="content">
+        <h2>Benefícios da EcoTech</h2>
+        <ul>
+          <li><i class="fas fa-chart-line"></i> <strong>Redução de Emissões:</strong> Energias renováveis ajudam a mitigar mudanças climáticas.</li>
+          <li><i class="fas fa-water"></i> <strong>Conservação de Recursos:</strong> Gestão eficiente de água e energia.</li>
+          <li><i class="fas fa-briefcase"></i> <strong>Geração de Empregos:</strong> Novas oportunidades em tecnologias sustentáveis.</li>
+          <li><i class="fas fa-heart"></i> <strong>Qualidade de Vida:</strong> Comunidades mais saudáveis e resilientes.</li>
+          <li><i class="fas fa-sync-alt"></i> <strong>Inovação Contínua:</strong> Busca constante por novas tecnologias.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="future" class="scroll-section">
+      <div class="content">
+        <h2>O Futuro da EcoTech</h2>
+        <p>A EcoTech está preparada para moldar um futuro mais sustentável através da integração de tecnologias emergentes como inteligência artificial e Internet das Coisas (IoT). Espera-se que cidades inteligentes utilizem sensores para otimizar o uso de recursos, enquanto inovações em transporte verde ajudarão a reduzir a pegada de carbono.</p>
+        
+        <p>A conscientização sobre sustentabilidade continuará a crescer, impulsionando investimentos em tecnologias limpas. Parcerias entre governos e empresas serão essenciais para desenvolver soluções que garantam um futuro equilibrado e saudável.</p>
+        
+        <p>Em resumo, o futuro da EcoTech representa não apenas inovação, mas também a chance de construir um mundo mais sustentável para as próximas gerações.</p>
+      </div>
+    </section>
+
+    <section id="curiosities" class="scroll-section">
+      <div class="content">
+        <h2>Curiosidades sobre Sustentabilidade</h2>
+        <ul>
+          <li><strong>Redução de Plástico:</strong> Se cada pessoa no mundo reduzisse o uso de plástico em apenas 1 item por dia, poderíamos evitar a produção de milhões de toneladas de plástico anualmente.</li>
+          <li><strong>Reciclagem de Papel:</strong> Reciclar 1 tonelada de papel pode salvar até 17 árvores.</li>
+          <li><strong>Energias Renováveis:</strong> A energia solar é uma das fontes que mais cresce no mundo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="examples" class="scroll-section">
+      <div class="content">
+        <h2>Exemplos de EcoTech</h2>
+        <div class="image-gallery">
+          <div class="image-item">
+            <img src="desgaste.png" alt="Energia Solar" />
+            <p>Energia Solar: Painéis solares capturando energia do sol.</p>
+          </div>
+          <div class="image-item">
+            <img src="cidade.png" alt="Cidades Inteligentes" />
+            <p>Cidades Inteligentes: Tecnologias conectadas para melhor gestão urbana.</p>
+          </div>
+          <div class="image-item">
+            <img src="agricultura.png" alt="Agricultura Sustentável" />
+            <p>Agricultura Sustentável: Uso de drones para monitoramento de culturas.</p>
+          </div>
+          <div class="image-item">
+            <img src="zumzum.png" alt="Transporte Verde" />
+            <p>Transporte Verde: Veículos elétricos em ação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 EcoTech. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Animação de texto dinâmico
+    const dynamicText = document.getElementById('dynamic-text');
+    const phrases = ["Sustentávell", "Inovadoraa", "Conscientee", "Ecológicoo"];
+    let index = 0;
+    let letterIndex = 0;
+    let isDeleting = false;
+
+    function animateText() {
+      const currentPhrase = phrases[index];
+      const displayedText = currentPhrase.slice(0, letterIndex);
+      dynamicText.textContent = displayedText;
+
+      if (isDeleting) {
+        letterIndex--;
+        if (letterIndex === 0) {
+          isDeleting = false;
+          index = (index + 1) % phrases.length; // Muda para a próxima frase
+        }
+      } else {
+        letterIndex++;
+        if (letterIndex === currentPhrase.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(animateText, isDeleting ? 100 : 200);
+    }
+
+    animateText(); // Inicia a animação de texto
+
+    // Animações de seção
+    const sections = document.querySelectorAll('.scroll-section');
+
+    function changeSectionHighlight() {
+      let scrollPos = window.scrollY || window.pageYOffset;
+      sections.forEach(section => {
+          const offsetTop = section.offsetTop;
+          const offsetHeight = section.offsetHeight;
+
+          if (scrollPos >= offsetTop - window.innerHeight * 0.8 && scrollPos < offsetTop + offsetHeight) {
+              section.classList.add('active'); // Adiciona a classe 'active' quando a seção está visível
+          } else {
+              section.classList.remove('active'); // Remove a classe 'active' quando a seção não está visível
+          }
+      });
+    }
+
+   
+  </script>
+</body>
+</html>

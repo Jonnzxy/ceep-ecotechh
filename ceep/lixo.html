@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarte de Eletrônicos</title>
+    <link rel="stylesheet" href="lixo.css">
+    <link rel="icon" href="/ceep/imgs/dceep.png" type="image/x-icon">
+    <style>
+       
+
+        .container_lista {
+            padding: 20px;
+            text-align: center; /* Centraliza o conteúdo */
+        }
+
+        .lista-locais {
+            display: inline-block; /* Permite alinhar as listas horizontalmente */
+            margin: 0 20px; /* Espaçamento entre as listas */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+
+        .lista-locais li {
+            margin: 5px 0; /* Espaçamento entre os itens da lista */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f41e1e;
+            color: white;
+        }
+
+        .brasao {
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="princi_eco loaded">
+        <img src="/ceep/imgs/dceep.png" alt="logo CEEP" class="logo">
+        <div class="login">
+            <a href="ceep.html" target="_blank"> Home</a>
+            <a class="ecot" href="lixo.html">Eco Tech</a>
+            <a href="https://wa.me/4436319685">WhatsApp</a>
+        </div>
+    </header>
+    
+    <div class="corpo loaded">
+        <h1 class="titulo_principal">Encontre pontos de coleta de lixo eletrônico perto de você </h1>
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1-nvIme2Hs_jUAQIdh3WxMoBvP3iej2A&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+    </div>
+
+    <div class="linhas loaded">
+        <ul>
+            <div class="separa">
+                <li class="linhail">
+                    <h1 class="branca">Linha branca</h1>
+                    <p class="linhas_descricao">Refrigeradores e congeladores, fogões, lavadoras de roupa e louça,
+                        secadoras, condicionadores de ar!</p>
+                </li><br>
+            </div>
+            <div class="separa">
+                <li class="linhail">
+                    <h1 class="marrom">Linha Marrom</h1>
+                    <p class="linhas_descricao">Monitores e televisores de tubo, plasma, LCD e LED, aparelhos de DVD e
+                        VHS, equipamentos de áudio, filmadoras!</p>
+                </li><br>
+            </div>
+            <div class="separa">
+                <li class="linhail">
+                    <h1 class="azul">Linha Azul</h1>
+                    <p class="linhas_descricao">Batedeiras, liquidificadores, ferros elétricos, furadeiras, secadores
+                        de cabelo, espremedores de frutas, aspiradores de pó, cafeteiras!</p>
+                </li><br>
+            </div>
+            <div class="separa">
+                <li class="linhail">
+                    <h1 class="verde">Linha Verde</h1>
+                    <p class="linhas_descricao">Computadores desktop e laptops, acessórios de informática, tablets e
+                        telefones celulares!</p>
+                </li><br>
+            </div>
+        </ul>
+    </div>
+
+    <div class="container_lista loaded">
+        <h2>Lista de todos os locais e suas localizações</h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;"> <!-- Flexbox para centralizar -->
+            <nav class="lista-locais">
+                <h3>Centro</h3>
+                <li><a href="https://maps.app.goo.gl/Ur7Kzx6HE2EkuxWF6" target="_blank">Magazine Luiza</a></li>
+                <li><a href="https://maps.app.goo.gl/nthw7PUgatUWab7Y9" target="_blank">Casas Bahia</a></li>
+                <li><a href="https://maps.app.goo.gl/XhqPrwcat8h7vfJT6" target="_blank">Pernambucanas</a></li>
+                <li><a href="https://maps.app.goo.gl/pdLXEB2t2YanHag9A" target="_blank">Lojas Vivo</a></li>
+                <li><a href="https://maps.app.goo.gl/rHVY35r9GS6o928P9" target="_blank">Eletroluz</a></li>
+                <li><a href="https://maps.app.goo.gl/hJoL8MmXyWYUnmSw5" target="_blank">Supermercado Amigão Av. Pará</a></li>
+                <li><a href="https://maps.app.goo.gl/2Rxj5oAwhu11F7Bi6" target="_blank">Tim Cianorte</a></li>
+                <li><a href="https://maps.app.goo.gl/J4zjKf3RCU54wTB86" target="_blank">Loja Claro</a></li>
+            </nav>
+            <nav class="lista-locais">
+                <h3>Zona 01</h3>
+                <li><a href="https://maps.app.goo.gl/7QXrGV6UmVL2TYki8" target="_blank">Lojas Vivo</a></li>
+            </nav>
+            <nav class="lista-locais">
+                <h3>Zona 08</h3>
+                <li><a href="https://maps.app.goo.gl/kvmGxLTnu2qFLtp59" target="_blank">Supermercado Copagril</a></li>
+            </nav>
+            <nav class="lista-locais">
+                <h3>Zona 03</h3>
+                <li><a href="https://maps.app.goo.gl/AnCnuxKx9dDm8tBs8" target="_blank">Secretaria Municipal do Meio Ambiente</a></li>
+            </nav>
+        </div>
+    </div>
+
+    <footer class="loaded">
+        <img src="/ceep/imgs/1.png" alt="brasao ceep" class="brasao">
+        <h6>&copy; Centro Estadual de Educação Profissional Cianorte - CEEP 2024</h6>
+    </footer>
+
+    <script>
+        // Adiciona a classe 'loaded' aos elementos após o carregamento da página
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            document.querySelectorAll('.loaded').forEach(el => el.classList.add('loaded'));
+        });
+    </script>
+</body>
+
+</html>

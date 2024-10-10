@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ceep.css">
+    <title>Site simples com HTML e CSS</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" id="logo"></a>
+            </div>
+            <!-- Botão do menu hamburger -->
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                &#9776; <!-- Símbolo do "hamburger" -->
+            </button>
+            <ul class="menu">
+                <li><a href="ceep.html">Home</a></li>
+                <li><a href="lixo.html">Lixo Eletrônico</a></li>
+                <li><a href="index.html">EcoTech</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe1iADeQjs2XkVGcnlFI17Wl3Qm8kVYn0Afm5zcALBeH29VAg/viewform">Inscreva-se já!</a></li>
+                <li><a href="lab.html">Laboratórios</a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">   
+            <div class="discover" id="about">
+                <img src="/ceep/imgs/ftceep.png" alt="background">
+            </div>
+        </section>
+        
+        <main>
+            <section id="sobre" class="scroll-section">
+                <div class="content">
+                    <h2>Sobre o CEEP</h2>
+                    <p>O Centro de Educação Profissional (CEEP) é uma instituição dedicada ao desenvolvimento educacional e à pesquisa acadêmica, oferecendo uma ampla gama de cursos e programas para capacitar profissionais e promover a inovação. Nosso compromisso é fornecer um ambiente de aprendizado que inspira a criatividade, o pensamento crítico e a colaboração.</p>
+                </div>
+            </section>
+        </main>
+    </header>
+
+
+
+        <div id="cursos">
+            <div class="card-grid">
+                <div class="card">
+                    <img src="/ceep/imgs/ads.png" alt="Análise e Desenvolvimento de Sistemas" />
+                    <div class="card-content">
+                        <h2> Análise e Desenvolvimento de Sistemas</h2>
+                        <p>Formação focada no desenvolvimento de software, programação, banco de dados e infraestrutura de TI.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/ceep/imgs/agro.png" alt="Agronegócio" />
+                    <div class="card-content">
+                        <h2>Agronegócio</h2>
+                        <p>Os alunos aprendem sobre técnicas de produção agrícola, gestão financeira, marketing, logística e sustentabilidade no setor.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/ceep/imgs/vest.png" alt="Vestuário" />
+                    <div class="card-content">
+                        <h2>Vestuário</h2>
+                        <p>Os alunos aprendem sobre moda, design, modelagem, corte e costura, desenvolvimento de coleções e gestão de produção.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/ceep/imgs/quim.png" alt="Química" />
+                    <div class="card-content">
+                        <h2>Química</h2>
+                        <p>No curso, os alunos estudam propriedades das substâncias, reações químicas, análises laboratoriais e processos industriais.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/ceep/imgs/rh.png" alt="Recursos Humanos" />
+                    <div class="card-content">
+                        <h2>Recursos Humanos</h2>
+                        <p>Os alunos aprendem a integrar práticas de segurança com gestão de pessoas, desenvolvendo habilidades para criar políticas de saúde ocupacional.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/ceep/imgs/farm.png" alt="Farmácia" />
+                    <div class="card-content">
+                        <h2>Farmácia</h2>
+                        <p>Prepara profissionais para atuar na área farmacêutica, focando em medicamentos, atendimento ao público e controle de qualidade.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/ceep/imgs/form.png" alt="Formação de Docentes" />
+                    <div class="card-content">
+                        <h2>Formação de Docentes</h2>
+                        <p>Prepara profissionais para atuar na educação, abordando metodologias de ensino e gestão de sala de aula.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/ceep/imgs/mkt.png" alt="Marketing" />
+                    <div class="card-content">
+                        <h2>Marketing</h2>
+                        <p>Ensina estratégias de promoção e análise de mercado, capacitando alunos a desenvolver campanhas.</p>
+                    </div>
+                </div>
+                <div class="card" id="final">
+                    <img src="/ceep/imgs/seg.png" alt="Segurança no Trabalho" />
+                    <div class="card-content">
+                        <h2>Segurança no Trabalho</h2>
+                        <p>O curso aborda técnicas de recrutamento e seleção, desenvolvimento de pessoas e gestão de desempenho.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="localiza">
+            <h1> Localização</h1>
+        </section>
+        <div id="maps">
+            <div class="back">
+                <div class="padd">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.314827814635!2d-52.62829562508628!3d-23.664696765395902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed59c6d1125dab%3A0xdaee9aaeef2ba67d!2sCentro%20Estadual%20de%20Educa%C3%A7%C3%A3o%20Profissional%20Cianorte!5e0!3m2!1spt-BR!2sbr!4v1728129571551!5m2!1spt-BR!2sbr" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div class="rodape">
+                    <h4> Acompanhe nossas redes sociais</h4>
+                    <a href="https://www.facebook.com/ceepcianorte/?locale=pt_BR" target="_blank"><img src="/ceep/imgs/facebook.png" alt="logo facebook"></a>
+                    <a href="https://wa.me/4436319685" target="_blank"><img src="/ceep/imgs/whatsapp.png" alt="logo whatsapp"></a>
+                    <a href="https://www.instagram.com/ceepcianorte/" target="_blank"><img src="/ceep/imgs/instagram.png" alt="logo instagram"></a>
+                    <a href="https://br.linkedin.com/school/ceep-cianorte/" target="_blank"><img src="/ceep/imgs/linkedin.png" alt="logo linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a id="brasao"></a>
+        <p>&copy;2024 CEEP-CIANORTE. Todos os direitos reservados</p>
+    </footer>   
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.navbar ul');
+
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
